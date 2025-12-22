@@ -17,7 +17,8 @@ void enqueue(int value) {
 
     if (rear == NULL) {
         front = rear = newNode;
-    } else {
+    }
+    else {
         rear->next = newNode;
         rear = newNode;
     }
@@ -37,8 +38,9 @@ void dequeue() {
     printf("Deleted %d from queue\n", temp->data);
     front = front->next;
 
-    if (front == NULL)
+    if (front == NULL) {
         rear = NULL;
+    }
 
     free(temp);
 }
