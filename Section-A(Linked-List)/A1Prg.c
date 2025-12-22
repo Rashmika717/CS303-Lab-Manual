@@ -1,4 +1,3 @@
-// Implementation of Linked List using array
 #include <stdio.h>
 
 struct Node {
